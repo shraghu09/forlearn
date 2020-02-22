@@ -13,10 +13,10 @@ import com.pages.BAth;
 
 public class TC_BAth extends Basetest{
 	
-	@Test(priority=3)
+	@Test(priority=2)
 	public void Selectbath() throws InterruptedException, IOException
 	{
-		BAth b=new BAth(driver);
+		BAth b = new BAth(driver);
 		b.bath();
 		b.bathlinen();
 		

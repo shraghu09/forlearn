@@ -5,9 +5,10 @@ import org.testng.annotations.Test;
 import com.generic.Basetest;
 import com.pages.Hometownwlcome;
 
+
 public class TC_furniture extends Basetest {
 	
-	@Test(priority=1)
+	@Test(priority=3)
 	public void runfurtestcase() throws InterruptedException
 	{
 		Hometownwlcome home=new Hometownwlcome(driver);

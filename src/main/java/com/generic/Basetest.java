@@ -11,9 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Basetest {
 	public WebDriver driver;
 	
-//	@BeforeSuite
-//	public void setup()
-//	{
+
 		
 	@BeforeMethod
 	public void openapp()
@@ -24,7 +22,7 @@ public class Basetest {
 		driver.manage().window().maximize();
 		driver.get("https://www.hometown.in/");
 		
-		//driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}
 	

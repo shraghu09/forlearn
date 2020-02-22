@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.tests.TC_furniturecomp"/>
+      <class name="com.tests.TC_BAth"/>
+      <class name="com.tests.Logintest"/>
+      <class name="com.tests.TC_furniture"/>
+    </classes>
+  </test> <!-- Test -->
   <test name="Test(failed)">
     <classes>
+      <class name="com.tests.TC_furniture">
+        <methods>
+          <include name="runfurtestcase"/>
+        </methods>
+      </class> <!-- com.tests.TC_furniture -->
       <class name="com.tests.TC_BAth">
         <methods>
           <include name="openapp"/>
@@ -10,12 +23,6 @@
           <include name="Selectbath"/>
         </methods>
       </class> <!-- com.tests.TC_BAth -->
-      <class name="com.tests.TC_furniture">
-        <methods>
-          <include name="openapp"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.tests.TC_furniture -->
       <class name="com.tests.TC_furniturecomp">
         <methods>
           <include name="openapp"/>

@@ -2,6 +2,7 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
     <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
@@ -53,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,6 +108,20 @@
                     </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.tests.TC_furniture" hash-for-method="runfurtestcase">runfurtestcase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
                       <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
@@ -116,11 +131,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.tests.TC_furniturecomp" hash-for-method="executetc">executetc</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.tests.TC_furniture" hash-for-method="runfurtestcase">runfurtestcase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -156,8 +166,8 @@
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
 System info: host: &apos;HMRAGHU&apos;, ip: &apos;192.168.88.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\raghu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: eab2bda2ac1a226c6bf16ebec4d2e452
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\raghu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49479}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbf2a3499d3ef9d6aa4e5fef54e3af9a
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -175,9 +185,9 @@ Session ID: eab2bda2ac1a226c6bf16ebec4d2e452
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.tests.TC_furniture</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -189,7 +199,7 @@ Session ID: eab2bda2ac1a226c6bf16ebec4d2e452
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -229,7 +239,7 @@ Session ID: eab2bda2ac1a226c6bf16ebec4d2e452
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.tests.TC_furniturecomp&quot;/&gt;
@@ -238,6 +248,34 @@ Session ID: eab2bda2ac1a226c6bf16ebec4d2e452
       &lt;class name=&quot;com.tests.TC_furniture&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test name=&quot;Test(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tests.TC_furniture&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;runfurtestcase&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.tests.TC_furniture --&gt;
+      &lt;class name=&quot;com.tests.TC_BAth&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;openapp&quot;/&gt;
+          &lt;include name=&quot;teardown&quot;/&gt;
+          &lt;include name=&quot;Selectbath&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.tests.TC_BAth --&gt;
+      &lt;class name=&quot;com.tests.TC_furniturecomp&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;openapp&quot;/&gt;
+          &lt;include name=&quot;teardown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.tests.TC_furniturecomp --&gt;
+      &lt;class name=&quot;com.tests.Logintest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;openapp&quot;/&gt;
+          &lt;include name=&quot;teardown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.tests.Logintest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -250,6 +288,9 @@ Session ID: eab2bda2ac1a226c6bf16ebec4d2e452
             <ul>
               <li>
                 <span class="test-name">Test (4 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test(failed) (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -279,24 +320,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runtest')
 data.setCell(0, 2, 'com.tests.Logintest')
-data.setCell(0, 3, 16097);
+data.setCell(0, 3, 18808);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'executetc')
 data.setCell(1, 2, 'com.tests.TC_furniturecomp')
-data.setCell(1, 3, 4498);
+data.setCell(1, 3, 7276);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Selectbath')
 data.setCell(2, 2, 'com.tests.TC_BAth')
-data.setCell(2, 3, 2615);
+data.setCell(2, 3, 2951);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runfurtestcase')
 data.setCell(3, 2, 'com.tests.TC_furniture')
-data.setCell(3, 3, 2263);
+data.setCell(3, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -329,59 +370,53 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">executetc</span>
-                <span class="method-start">57428 ms</span>
+                <span class="method-start">66146 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">61927 ms</span>
+                <span class="method-start">73425 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tests.TC_BAth</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openapp</span>
-                <span class="method-start">68518 ms</span>
+                <span class="method-start">77852 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Selectbath</span>
-                <span class="method-start">85194 ms</span>
+                <span class="method-start">93812 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">88372 ms</span>
+                <span class="method-start">97580 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tests.Logintest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openapp</span>
-                <span class="method-start">91629 ms</span>
+                <span class="method-start">100825 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runtest</span>
-                <span class="method-start">106068 ms</span>
+                <span class="method-start">112138 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">teardown</span>
-                <span class="method-start">122167 ms</span>
+                <span class="method-start">130953 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tests.TC_furniture</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openapp</span>
-                <span class="method-start">124864 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runfurtestcase</span>
-                <span class="method-start">144799 ms</span>
+                <span class="method-start">131195 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">147064 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

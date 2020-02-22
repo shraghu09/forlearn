@@ -14,11 +14,11 @@ import com.pages.Hometownwlcome;
 
 public class Logintest extends Basetest {
 	
-	@Test(priority=0,expectedExceptions=Exception.class)
+	@Test(priority=1,expectedExceptions=Exception.class)
 	public void runtest() throws InterruptedException, IOException
 	{
-		//driver.findElement(By.id("onesignal-popover-cancel-button")).click();
-		Hometownwlcome home=new Hometownwlcome(driver);
+		driver.findElement(By.id("onesignal-popover-cancel-button")).click();
+       Hometownwlcome home=new Hometownwlcome(driver);
 		 Thread.sleep(5000);
 	     home.mouseoverlogin();
 	     Thread.sleep(3000);

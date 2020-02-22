@@ -5,8 +5,10 @@ import org.testng.annotations.Test;
 import com.generic.Basetest;
 import com.pages.Furniture;
 
+
+
 public class TC_furniturecomp extends Basetest {
-	@Test(priority=2)
+	@Test(priority=4)
 	public void executetc() throws InterruptedException
 	{
 		
